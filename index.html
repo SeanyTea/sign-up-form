@@ -4,8 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Skranji&family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Skranji&family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Skranji&family=Sofia+Sans:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>The Odin Project</h1>
+    <div class="main">
+        <div class="left-container">
+            <div class = "logo-card">
+                <div class = "logo">
+                    <img src="./images/odin-lined.png" alt="">
+                </div>
+                <div class = "slogan">
+                    ODIN
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class = 'description'>
+                <p id = "main"> This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <em>now</em> to get started. </p>
+
+                <p id = "hook"> You <em>know</em> you want to. </p>
+            </div>
+            <div class= 'fields'>
+                <h1> Let's do this! </h1>
+                <form id = "my-form">
+                    <div class="column1">
+                        <label for="firstName">First name</label>
+                        <input type="text" for = "firstName"> </input>
+
+                        <label for="email">Email</label>
+                        <input type="text" for = "email"> </input>
+
+                        <label for="password" >Password</label>
+                        <input type="password" for = "password" minlength = "8"> </input>
+                    </div>
+                    <div class="column2">
+                        <label for="lastName">Last name</label>
+                        <input type="text" for = "lastName"> </input>
+
+                        <label for="phoneNumber">Phone number</label>
+                        <input type="text" for = "phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                         placeholder = "###-###-####"> </input>
+
+                        <label for="confirm">Confirm password</label>
+                        <input type="password" for = "confirm"> </input>
+                    </div>
+                    
+                    
+                </form>
+
+            </div>
+            <div class="footer">
+                <button type ="submit" form="my-form">Create Account</button>
+
+                <p class = login>
+                    Already have an account? <a href="">Log-in here.</a> 
+                </p>
+            </div>
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>
